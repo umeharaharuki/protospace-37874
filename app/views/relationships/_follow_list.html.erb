@@ -1,4 +1,5 @@
-  <% @users.each do |user| %>
+<% if @users.exists? %>
+  <% users.each do |user| %>
     <table>
       <thead>
         <tr>
@@ -16,4 +17,6 @@
       </tbody>
     </table>
   <% end %>
-<%= render "relationships/follow_list"%>
+<% else %>
+  <p>ユーザーはいません</p>
+<% end %>

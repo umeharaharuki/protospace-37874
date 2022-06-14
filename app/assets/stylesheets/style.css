@@ -278,6 +278,14 @@ a {
   font-size: 10px;
 }
 
+.follow {
+  height: 20px;
+  width: 20px;
+  color: #fff;
+  background-color: red;
+  border-radius: 5px;
+}
+
 /* タブレット対応 */
 @media (max-width: 1024px) {
   .inner {
