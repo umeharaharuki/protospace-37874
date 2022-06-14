@@ -15,6 +15,7 @@
 <%= link_to "フォロワー一覧", user_followers_path(@user.id), method: :get,class: "follow" %>
 <div class="table__col2">フォロー数: <%= @user.followings.count %></div>
           <div class="table__col2">フォロワー数: <%= @user.followers.count %></div>
+          <div class="table__col2">投稿<%= @user.prototypes.count %></div>
       <table class="table">
         <tbody>
           <tr>
