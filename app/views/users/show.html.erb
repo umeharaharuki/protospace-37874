@@ -11,6 +11,8 @@
   <%= link_to "フォローする", user_relationships_path(@user.id), method: :post,class: "follow" %>
 <% end %>
 <% end %>
+<div class="table__col2">フォロー数: <%= @user.followings.count %></div>
+          <div class="table__col2">フォロワー数: <%= @user.followers.count %></div>
       <table class="table">
         <tbody>
           <tr>
@@ -29,10 +31,6 @@
             <th class="table__col1">役職</th>
             <td class="table__col2"><%= @user.position %></td>
           </tr>
-          <tr>
-          <td class="table__col2">フォロー数: <%= @user.followings.count %></td>
-          <td class="table__col2">フォロワー数: <%= @user.followers.count %></td>
-        </tr>
         </tbody>
       </table>
       <h2 class="page-heading">
