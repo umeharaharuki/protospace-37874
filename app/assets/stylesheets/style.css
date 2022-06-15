@@ -286,6 +286,26 @@ a {
   border-radius: 5px;
 }
 
+.follow_main {
+  height: 50px;
+  width: 250px;
+  color: #fff;
+  background-color: lightgray;
+  border-radius: 5px;
+  display: flex;
+}
+
+.follow_text {
+  width: 50%;
+  text-align: center;
+  color: #3b4043;
+}
+
+.follow_count {
+  text-align: center;
+  color: #3b4043;
+}
+
 /* タブレット対応 */
 @media (max-width: 1024px) {
   .inner {
