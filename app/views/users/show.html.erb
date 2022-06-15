@@ -13,13 +13,13 @@
 <% end %>
 <div class="follow_main">
 <div class="follow_text">
-<%= link_to @user.followings.count, user_followings_path(@user.id), method: :get %>
+<%= link_to @user.followings.count, user_followings_path(@user.id) %>
 <div class="follow_count">
 フォロー中
 </div>
 </div>
 <div class="follow_text">
-<%= link_to @user.followers.count, user_followers_path(@user.id), method: :get %>
+<%= link_to @user.followers.count, user_followers_path(@user.id) %>
 <div class="follow_count">
 フォロワー
 </div>
